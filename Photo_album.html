@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Album-NADEEM </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .gallery {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .photo {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    
+    .photo img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s;
+    }
+    
+    .photo:hover img {
+      transform: scale(1.1);
+    }
+    
+    @media screen and (max-width: 767px) {
+      .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Photo Album</h1>
+    <div class="gallery">
+      <div class="photo">
+        <img src="89381.jpg" alt="Photo 1">
+      </div>
+      <div class="photo">
+        <img src="295839.jpg" alt="Photo 2">
+      </div>
+      <div class="photo">
+        <img src="295834.jpg" alt="Photo 3">
+      </div>
+      <div class="photo">
+        <img src="295832.jpg" alt="Photo 4">
+      </div>
+      <div class="photo">
+        <img src="295829.jpg" alt="Photo 5">
+      </div>
+      <div class="photo">
+        <img src="jerry-zhang-ePpaQC2c1xA-unsplash.jpg" alt="Photo 6">
+      </div>
+      <div class="photo">
+        <img src="pexels-cottonbro-studio-8088495.jpg" alt="Photo 7">
+      </div>
+      <div class="photo">
+        <img src="jerry-zhang-hkhCV41gOpA-unsplash.jpg" alt="Photo 8">
+      </div>
+      <div class="photo">
+        <img src="pexels-creative-vix-9754.jpg" alt="Photo 9">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
